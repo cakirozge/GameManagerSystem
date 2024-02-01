@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameManagerSystem.Abstract
 {
-    internal interface IEntity
+    public class IEntity
     {
     }
 }

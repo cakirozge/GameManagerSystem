@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace GameManagerSystem.Entities
 {
-    public class Customer:IEntity
+    public class Gamer:IEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime BirthTimeYear { get; set; }
+        public DateTime BirthDayYear { get; set; }
         public string NationalityId { get; set; }
     }
 }

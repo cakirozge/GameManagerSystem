@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace GameManagerSystem.Concrete
 {
-    public class ValidationCheckManager:IValidationCheckService
+    public class ValidationManager : IValidationService
     {
-        public bool CheckIfRealPerson(Customer customer)
+        public bool CheckIfRealPerson(Gamer gamer)
         {
             return true;
         }

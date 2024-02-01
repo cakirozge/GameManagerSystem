@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace GameManagerSystem.Abstract
 {
-    public interface ICustomerService
+    public interface IValidationService
     {
-        void Save(Customer customer);
-        void Update(Customer customer);
-        void Delete(Customer customer); 
+        bool CheckIfRealPerson(Gamer gamer);
     }
 }
