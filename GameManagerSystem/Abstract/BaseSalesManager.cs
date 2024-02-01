@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace GameManagerSystem.Abstract
 {
-    public abstract class BaseGamerManager : IGamerService
+    public abstract class BaseSalesManager : IGamerService
     {
         public virtual void Delete(Gamer gamer)
         {
-            Console.WriteLine(  "Silinme işlemi başarılı.");
+            Console.WriteLine("Satış silindi.");
         }
 
         public virtual void Save(Gamer gamer)
         {
-            Console.WriteLine("Kaydedilme işlemi başarılı : " + "Gamer Name : " + gamer.FirstName);
+            Console.WriteLine("Satış işlemi kaydedildi. " + "Oyun Adı : " + gamer.FirstName);
         }
 
         public virtual void Update(Gamer gamer)
         {
-            Console.WriteLine("Güncelleme işlemi başarılı.");
+            Console.WriteLine("Satış güncellendi.");
         }
     }
 }
