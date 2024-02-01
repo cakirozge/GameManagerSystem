@@ -19,7 +19,14 @@ namespace GameManagerSystem.Concrete
 
         public override void Save(Gamer gamer)
         {
-            base.Save(gamer);
+            if ( _validationService.CheckIfRealPerson(gamer))  // puan verdiği için gerçek kişi doğrulaması yapıyor.
+            {
+                base.Save(gamer);
+            }
+            else
+            {
+                throw new Exception("Not a valid person."); //false dönerse
+            }
         }
 
         public override void Update(Gamer gamer)
